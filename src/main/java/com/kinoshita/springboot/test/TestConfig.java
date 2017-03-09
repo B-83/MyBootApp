@@ -1,16 +1,13 @@
-package com.kinoshita.springboot;
+package com.kinoshita.springboot.test;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 @Configuration
-public class MyBootAppConfig {
+public class TestConfig {
 
 	@Bean
-	MyDataBean myDataBean() {
-		return new MyDataBean();
+	MyDialect myDialect() {
+		return new MyDialect();
 	}
-	
-	
-	
 }

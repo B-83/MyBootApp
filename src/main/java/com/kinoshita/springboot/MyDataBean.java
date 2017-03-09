@@ -2,6 +2,7 @@ package com.kinoshita.springboot;
 
 import org.springframework.beans.factory.annotation.Autowired;
 
+import com.kinoshita.springboot.entity.MyData;
 import com.kinoshita.springboot.repositories.MyDataRepository;
 
 public class MyDataBean {

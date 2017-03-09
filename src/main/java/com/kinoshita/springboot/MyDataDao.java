@@ -3,6 +3,8 @@ package com.kinoshita.springboot;
 import java.io.Serializable;
 import java.util.List;
 
+import com.kinoshita.springboot.entity.MyData;
+
 public interface MyDataDao <T> extends Serializable {
 	
 	public List<T> getAll();

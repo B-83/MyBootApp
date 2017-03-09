@@ -11,14 +11,21 @@ public class MyTLUtility {
 		return "Hello, <b>" + name + "!</b>";
 	}
 	
+	/**
+	 * 前ページのリンク
+	 * @param num
+	 * @return
+	 */
 	public String prevUrl(int num) {
-		System.out.println("■■■■■■■■■■■■■■■■■■■■start■■■■■■■■■■■■■■■■■■■■■■■");
-		log.error("aaa", num);
-		System.out.println("■■■■■■■■■■■■■■■■■■■■■■■end■■■■■■■■■■■■■■■■■■■■■■■");
-		return "1";
+		return "/page/" + (num > 1 ? num -1 : 1);
 	}
 	
+	/**
+	 * 次ページのリンク
+	 * @param num
+	 * @return
+	 */
 	public String nextUrl(int num) {
-		return "/page/" + "2";
+		return "/page/" + (num + 1);
 	}
 }

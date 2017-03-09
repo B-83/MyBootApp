@@ -1,4 +1,4 @@
-package com.kinoshita.springboot;
+package com.kinoshita.springboot.controller;
 
 import java.util.List;
 
@@ -15,6 +15,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
 
+import com.kinoshita.springboot.MsgDataDaoImpl;
+import com.kinoshita.springboot.entity.MsgData;
 import com.kinoshita.springboot.repositories.MsgDataRepository;
 
 @Controller

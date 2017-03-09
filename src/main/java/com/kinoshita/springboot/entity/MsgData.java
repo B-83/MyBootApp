@@ -1,4 +1,4 @@
-package com.kinoshita.springboot;
+package com.kinoshita.springboot.entity;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;

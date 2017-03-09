@@ -1,4 +1,4 @@
-package com.kinoshita.springboot;
+package com.kinoshita.springboot.entity;
 
 import java.util.List;
 
@@ -17,6 +17,8 @@ import javax.xml.bind.annotation.XmlRootElement;
 
 import org.hibernate.validator.constraints.Email;
 import org.hibernate.validator.constraints.NotEmpty;
+
+import com.kinoshita.springboot.Phone;
 
 @Entity
 @Table(name="mydata")

@@ -13,6 +13,7 @@ import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.stereotype.Service;
 
+import com.kinoshita.springboot.entity.MyData;
 import com.kinoshita.springboot.repositories.MyDataRepository;
 
 @Service
@@ -24,7 +25,8 @@ public class MyDataService {
 	@Autowired
 	MyDataRepository repository;
 	
-	private static final int PAGE_SIZE = 3;
+	// 1ページあたりのエンティティ数
+	private static final int PAGE_SIZE = 2;
 	
 	public Page<MyData> getMyDataInPage(Integer pageNumber) {
 		PageRequest pageRequest = new PageRequest(pageNumber - 1, PAGE_SIZE);

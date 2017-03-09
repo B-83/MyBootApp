@@ -1,4 +1,4 @@
-package com.kinoshita.springboot;
+package com.kinoshita.springboot.controller;
 
 import java.util.List;
 
@@ -6,6 +6,10 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+
+import com.kinoshita.springboot.MyDataService;
+import com.kinoshita.springboot.MySampleBean;
+import com.kinoshita.springboot.entity.MyData;
 
 @RestController
 public class MyDataRestController {

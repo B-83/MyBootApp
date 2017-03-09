@@ -1,4 +1,4 @@
-package com.kinoshita.springboot;
+package com.kinoshita.springboot.test;
 
 import org.springframework.stereotype.Component;
 
