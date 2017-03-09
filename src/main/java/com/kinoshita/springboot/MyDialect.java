@@ -20,7 +20,6 @@ public class MyDialect extends AbstractDialect implements IExpressionEnhancingDi
 	    EXPRESSION_OBJECTS = Collections.unmodifiableMap(objects);
 	}
 	
-	
 	/**
 	 * オーバーライド
 	 */

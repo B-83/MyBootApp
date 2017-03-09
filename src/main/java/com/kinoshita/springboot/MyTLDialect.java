@@ -10,21 +10,24 @@ import org.thymeleaf.dialect.IExpressionEnhancingDialect;
 
 public class MyTLDialect extends AbstractDialect implements IExpressionEnhancingDialect {
 
-	private static final Map<String, Object> EXPRESSION_OBJECTS;
+	//private static final Map<String, Object> EXPRESSION_OBJECTS;
 	
-	static {
-		Map<String, Object> objects = new HashMap<>();
-		objects.put("myTLHelper", new MyTLUtility());
-		EXPRESSION_OBJECTS = Collections.unmodifiableMap(objects);
-	}
+//	static {
+//		Map<String, Object> objects = new HashMap<>();
+//		objects.put("myTLHelper", new MyTLUtility());
+//		EXPRESSION_OBJECTS = Collections.unmodifiableMap(objects);
+//	}
 	
 	public MyTLDialect() {
+		
 		super();
 	}
 	
 	@Override
 	public Map<String, Object> getAdditionalExpressionObjects(IProcessingContext processingContext) {
-		return EXPRESSION_OBJECTS;
+		Map<String, Object> objects = new HashMap<>();
+		objects.put("myTLHelper", new MyTLUtility());
+		return objects;
 	}
 	
 	@Override

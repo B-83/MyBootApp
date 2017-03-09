@@ -17,7 +17,7 @@
 	<h1 th:text="#{content.title}">Helo Page</h1>
 	<p th:text="${msg}"></p>
 	<ol id="obj"></ol>
-	<p th:text="${#myTLHelper.hello('aaa')}"></p>
+	<p th:text="${#myTLHelper.hello('aaaa')}"></p>
 	
 	<table>
 		<tr>
@@ -39,10 +39,10 @@
 			<table class="navi">
 			<tr>
 			<td><div style="text-align: left;">
-				<a th:href="${#myTLHelper.prevUrl(pagenumber)}">← Prev</a></div></td>
+				</div></td>
 			<td><div style="text-align: center;">page</div></td>
 			<td><div style="text-align: right;">
-				<a th:href="${#myTLHelper.nextUrl(pagenumber)}">Next →</a></div></td>
+				</div></td>
 			</tr>
 			</table>
 			</td>
