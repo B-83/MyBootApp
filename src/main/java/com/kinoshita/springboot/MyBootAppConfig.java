@@ -11,6 +11,6 @@ public class MyBootAppConfig {
 		return new MyDataBean();
 	}
 	
-	@Bean
+	
 	
 }
