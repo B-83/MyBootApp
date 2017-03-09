@@ -8,6 +8,9 @@ public class MyBootAppConfig {
 
 	@Bean
 	MyDataBean myDataBean() {
+		if (true) {
+			int a = 1;
+		}
 		return new MyDataBean();
 	}
 	
