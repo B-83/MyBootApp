@@ -1,0 +1,22 @@
+<!DOCTYPE HYML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+	<title>test page</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<style>
+		h1 { font-size: 18pt; font-weight: bold; color: gray; }
+		body {font-size: 13pt; color: gray; margin: 5px 25px; }
+		tr { margin: 5px; }
+		th { padding: 5px; color: white; background: darkgray; }
+		td { padding: 5px; color: black; background: #e0e0ff; }
+	</style>
+</head>
+
+<body>
+	<h1>test page</h1>
+	<p th:text="${#dates.format(new java.util.Date(), 'dd/MMM/yyyy HH:mm')}"></p>
+	<p th:text="${#numbers.formatInteger(1234, 7)}"></p>
+	<p th:text="${#strings.toUpperCase('Welcome to Spring.')}"></p>
+	<p th:text="${#helper.hello()}"></p>
+</body>
+</html>

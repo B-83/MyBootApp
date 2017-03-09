@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+	<title>top page</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<style>
+		h1 { font-size: 18pt; font-weight: bold; color:gray; }
+		body { font-size: 13pt; color: gray; margin: 5px 25px; }
+		tr { margin: 5px; }
+		th { padding: 5px; color: white; background: darkgray; }
+		td { padding: 5px; color: black; background: #e0e0ff; }
+		.err { color: red; }
+	</style>
+</head>
+
+<body>
+	<h1 th:text="#{content.title}">Helo Page</h1>
+	<p th:text="${msg}"></p>
+	<ol id="obj"></ol>
+	<p th:text="${#myTLHelper.hello('aaa')}"></p>
+	
+	<table>
+		<tr>
+			<th>ID</th>
+			<th>名前</th>
+			<th>メール</th>
+			<th>年齢</th>
+			<th>メモ</th>
+		</tr>
+		<tr th:each="obj: ${datalist}">
+			<td th:text="${obj.id}"></td>
+			<td th:text="${obj.name}"></td>
+			<td th:text="${obj.mail}"></td>
+			<td th:text="${obj.age}"></td>
+			<td th:text="${obj.memo}"></td>
+		</tr>
+		<tr>
+			<td colspan="5">
+			<table class="navi">
+			<tr>
+			<td><div style="text-align: left;">
+				<a th:href="${#myTLHelper.prevUrl(pagenumber)}">← Prev</a></div></td>
+			<td><div style="text-align: center;">page</div></td>
+			<td><div style="text-align: right;">
+				<a th:href="${#myTLHelper.nextUrl(pagenumber)}">Next →</a></div></td>
+			</tr>
+			</table>
+			</td>
+		</tr>
+	</table>
+</body>
+</html>
